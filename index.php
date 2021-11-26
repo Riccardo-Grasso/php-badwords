@@ -1,7 +1,7 @@
 <?php
 $paragrafo = "Primo paragrafo con PHP";
 $paragrafoLength = strlen($paragrafo);
-$censura = $_GET["php"];
+$censura = $_GET["parola"];
 
 $paragrafoMinuscolo = strtolower($paragrafo);
 $paragrafoCensurato = str_replace($censura, "***", $paragrafoMinuscolo);
@@ -20,12 +20,14 @@ $paragrafoCensuratoLength = strlen($paragrafoCensurato);
 </head>
 
 <body>
-    <h1>PHP</h1>
-    <p> <?php echo $paragrafo  ?> </p>
-    <p>Lunghezza paragrafo: <?php echo $paragrafoLength ?></p>
-    <h4>Paragrafo censurato</h4>
-    <p> <?php echo $paragrafoCensurato  ?> </p>
-    <p>Lunghezza paragrafo censurato: <?php echo $paragrafoCensuratoLength ?></p>
+    <main>
+        <h1>PHP</h1>
+        <p> <?php echo $paragrafo  ?> </p>
+        <p>Lunghezza paragrafo: <?php echo $paragrafoLength ?></p>
+        <h4>Paragrafo censurato</h4>
+        <p> <?php echo $paragrafoCensurato  ?> </p>
+        <p>Lunghezza paragrafo censurato: <?php echo $paragrafoCensuratoLength ?></p>
+    </main>
 </body>
 
 </html>
